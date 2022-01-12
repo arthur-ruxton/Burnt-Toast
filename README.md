@@ -167,6 +167,7 @@ The live project: [Burnt Toast](http://burnt-toast-ga.herokuapp.com/)
   <summary>Some personal contributions (with code snippets) - Frontend:</summary>
   <p>'helpers' - exported functions for making requests: </p>
   <img src=https://user-images.githubusercontent.com/89402596/149167174-2d9a1477-d0a3-428f-92e3-603269073dab.png />
+  <br>
   <img src=https://user-images.githubusercontent.com/89402596/149167680-629b7dd0-74fd-4117-b680-afa2a16efc23.png />
   <p>
     Building a Carousel of all movies in the database at any given time. -- To do this make a request for all films in the database saving them to a stateful variable assigned an array of objects (films) -> map over this array of films -> create an instance of a 'Slide' component passing the individual film object as React props
