@@ -202,7 +202,7 @@ The live project: [Burnt Toast](http://burnt-toast-ga.herokuapp.com/)
 </details>
 
 <details>
-  <summary>Challenges</summary>
+  <summary>Challenges & Wins</summary>
   <ul>
     <li>
       Time management - packing as many features in as possible but making sure they all work effectively, removing the ones I couldn’t polish before                     deadline.
