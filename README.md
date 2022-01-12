@@ -73,7 +73,7 @@ The live project: [Burnt Toast](http://burnt-toast-ga.herokuapp.com/)
         <ul>
           <li>Immediately we set up a Trello board</li>
           <li>
-            We started with written plans for the front and backend respectively.
+            We started with written plans for the front and backend respectively, taking turns making notes as we discussed ideas on a Zoom call.
             <ul>
               <li>
                 Backend plan: we listed the necessary schemas, controllers, routes, secure routes and described the index, environment and database we would be                     building.
@@ -85,10 +85,10 @@ The live project: [Burnt Toast](http://burnt-toast-ga.herokuapp.com/)
           </li>
           <li>We then added three lists - ‘to do’, ‘in progress’, ‘done’ - in order to track progress.</li>
           <li>
-            Once we had established the mongo db it was time to begin work on the backend code, starting with the environment & index - closely following the notes             we made during the previous segment of the course.
+            Once we had established the mongo database it was time to begin work on the backend code, starting with the environment & index - closely following the             notes we made during the previous segment of the course.
           </li>
           <li>
-            We built the models we felt were necessary to deliver and MVP and established the required relationships. - My Teammate Shak largely took ownership                 over this step as he was keen to practice it. 
+            We built the models that we felt were necessary to deliver and MVP and established the required relationships. - My Teammate Shak largely took ownership over this at first as he was keen to practice, I helped guide the process and wrote some of the complex relationships/models/controllers later on.
           </li>
           <li>
             We then began writing controllers and routes simultaneously and testing them using Insomnia (analogous to postman which you also may be familiar with).             Testing in this way allows us to ensure our requests, our routes and our controllers are fully functional before starting work on the front end.
@@ -135,9 +135,11 @@ The live project: [Burnt Toast](http://burnt-toast-ga.herokuapp.com/)
         <ul>
           <li>
             The later stages of the process involved adding to the backend. Shak and I worked out what kind of schemas and relationships we would need to allow a               logged in user the ability to comment on a movie and like existing comments. 
+            <img src=https://user-images.githubusercontent.com/89402596/149163175-9747ba59-20d5-4359-97da-ef079aebd727.png />
           </li>
           <li>
-            We had to write complex controllers for those operations, testing them on insomnia. Writing the controllers for liking and unliking a comment on a film             was especially challenging, grappling with the logic until It worked on insomnia was a satisfying process. 
+            We had to write complex controllers for those operations, testing them on insomnia. Writing the controllers for liking and unliking a comment on a film             was especially challenging, grappling with the logic until It worked on insomnia was a satisfying process. - I took ownership over this logic.
+            <img src=https://user-images.githubusercontent.com/89402596/149163006-10c58fb4-1456-4cfb-b9d7-8137572249fa.png />
           </li>
           <li>
             I then began work on the front end, which turned out to be even more challenging funnily enough. I was able to make the commenting system work in time             for the presentation but the like / unlike system still needed some small tweaks. - I felt there was room for improvement. 
@@ -149,6 +151,27 @@ The live project: [Burnt Toast](http://burnt-toast-ga.herokuapp.com/)
       </details>
     </li>
   </ul>
+</details>
+
+<details>
+  <summary>Some personal contributions (with code snippets) - Backend:</summary>
+  <p>Models - Embedded relationship within an embedded relationship</p>
+  <img src=https://user-images.githubusercontent.com/89402596/149164171-fd62b783-5fb6-4312-9e3c-63f16f4af8c8.png />
+  <p>Controllers - Add or delete a film rating</p>
+  <img src=https://user-images.githubusercontent.com/89402596/149163897-88bff672-c882-4bc4-b35f-79822c9b5b32.png />
+  <p>Controllers - Like an existing comment:</p>
+  <img src=https://user-images.githubusercontent.com/89402596/149163671-3cb63059-1683-40b6-8846-0c87cf731905.png />
+</details>
+
+<details>
+  <summary>Some personal contributions (with code snippets) - Frontend:</summary>
+  <p>'helpers' - exported functions for making requests: </p>
+  <img src=https://user-images.githubusercontent.com/89402596/149167174-2d9a1477-d0a3-428f-92e3-603269073dab.png />
+  <img src=https://user-images.githubusercontent.com/89402596/149167680-629b7dd0-74fd-4117-b680-afa2a16efc23.png />
+  <p>
+    Building a Carousel of all movies in the database at any given time. -- To do this make a request for all films in the database saving them to a stateful variable assigned an array of objects (films) -> map over this array of films -> create an instance of a 'Slide' component passing the individual film object as React props
+  </p>
+  <img src=https://user-images.githubusercontent.com/89402596/149164991-81944899-56b6-4c81-af85-50eb36e8b1b1.png />
 </details>
 
 <details>
