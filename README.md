@@ -1,8 +1,7 @@
 # General Assembly - project 3
 # Burnt Toast - MERN stack - film review site
-Collaboators: [Kirtan](https://github.com/kirtanp8) & [Shak](https://github.com/Shak-H)
-
 The live project: [Burnt Toast](http://burnt-toast-ga.herokuapp.com/)
+Collaboators: [Kirtan](https://github.com/kirtanp8) & [Shak](https://github.com/Shak-H)
 
 <details>
   <summary>Aim</summary>
