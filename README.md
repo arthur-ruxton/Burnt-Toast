@@ -103,47 +103,43 @@ Collaboators: [Kirtan](https://github.com/kirtanp8) & [Shak](https://github.com/
     <p>
       Just before we began work on the frontend, an update was made to the react-router-dom architecture, which introduced a bonus challenge - to correctly               implement the new system we were unfamiliar with.
     </p>
-    <ul>
-      <li>
-        We created a ‘helpers’ folder containing configurable callback functions for making our requests. In this way your request functions can all be located             and edited fairly easily if necessary down the line.
-      </li>
-      <li>
-        Our thorough plan gave us a clear overview of the pages and components we would have to build for our MVP and we made quick progress with those -                   building out things like the navigation bar and the footer which would be seen on every page - then the register and login form which we used to retest             our requests and routes, successfully.
-      </li>
-      <li>
-        The home page (carousel of movies within the database which is updated live) was challenging and I took ownership over that component, having worked               with the react bootstrap library in the past. 
-      </li>
-      <li>
-        My Teammate Kirtan built a brilliant search bar system, utilising what he’d learned on his previous project.
-      </li>
-      <li>
-        Building out things like the ‘movies’ page felt easy and went smoothly overall.
-      </li>
-    </ul>
+    <p>
+      We created a ‘helpers’ folder containing configurable callback functions for making our requests. In this way your request functions can all be located             and edited fairly easily if necessary down the line.
+    </p>
+    <p>
+      Our thorough plan gave us a clear overview of the pages and components we would have to build for our MVP and we made quick progress with those -                   building out things like the navigation bar and the footer which would be seen on every page - then the register and login form which we used to retest             our requests and routes, successfully.
+    </p>
+    <p>
+      The home page (carousel of movies within the database which is updated live) was challenging and I took ownership over that component, having worked               with the react bootstrap library in the past. 
+    </p>
+    <p>
+      My Teammate Kirtan built a brilliant search bar system, utilising what he’d learned on his previous project.
+    </p>
+    <p>
+      Building out things like the ‘movies’ page felt easy and went smoothly overall.
+    </p>
   </div>
   <div>
     <h3>End - polishing & testing :</h3>
-    <ul>
-      <li>
+      <p>
         The later stages of the process involved adding to the backend. Shak and I worked out what kind of schemas and relationships we would need to allow a               logged in user the ability to comment on a movie and like existing comments. 
         <img src=https://user-images.githubusercontent.com/89402596/149163175-9747ba59-20d5-4359-97da-ef079aebd727.png />
-      </li>
-      <li>
+      </p>
+      <p>
         We had to write complex controllers for those operations, testing them on insomnia. Writing the controllers for liking and unliking a comment on a film             was especially challenging, grappling with the logic until It worked on insomnia was a satisfying process. - I took ownership over this logic.
         <img src=https://user-images.githubusercontent.com/89402596/149163006-10c58fb4-1456-4cfb-b9d7-8137572249fa.png />
-      </li>
-      <li>
+      </p>
+      <p>
         I then began work on the front end, which turned out to be even more challenging funnily enough. I was able to make the commenting system work in time             for the presentation but the like / unlike system still needed some small tweaks. - I felt there was room for improvement. 
-      </li>
-      <li>
+      </p>
+      <p>
         We then styled the project, finding fonts, a logo, and a color scheme that we felt suited the project. I took ownership over much of this stage of the             process. I found and implemented a second React library called react-reveal, which allowed me to include simple animations on all of the sites forms,               giving the site a slightly more dynamic feel. 
-      </li>
-     </ul>
-  </div
+      </p>
+  </div>
 </details>
 
 <details>
-  <summary>Some personal contributions (with code snippets) - Backend:</summary>
+  <summary>Personal contributions (code) Backend:</summary>
   <p>Models - Embedded relationship within an embedded relationship</p>
   <img src=https://user-images.githubusercontent.com/89402596/149164171-fd62b783-5fb6-4312-9e3c-63f16f4af8c8.png />
   <p>Controllers - Add or delete a film rating</p>
@@ -153,7 +149,7 @@ Collaboators: [Kirtan](https://github.com/kirtanp8) & [Shak](https://github.com/
 </details>
 
 <details>
-  <summary>Some personal contributions (with code snippets) - Frontend:</summary>
+  <summary>Personal contributions (code) Frontend:</summary>
   <p>'helpers' - exported functions for making requests: </p>
   <img src=https://user-images.githubusercontent.com/89402596/149167174-2d9a1477-d0a3-428f-92e3-603269073dab.png />
   <br>
@@ -218,8 +214,6 @@ Collaboators: [Kirtan](https://github.com/kirtanp8) & [Shak](https://github.com/
 
 <details>
   <summary>Bugs</summary>
-  <ul>
-    <li>Some of the styling doesn’t work well when resizing the page (text jumps out of buttons and elements are laid on top of eachother)</li>
-    <li>The Like button allows you to like a comment more than once.</li>
-  </ul>
+    <p>Some of the styling doesn’t work well when resizing the page (text jumps out of buttons and elements are laid on top of eachother)</p>
+    <p>The Like button allows you to like a comment more than once.</p>
 </details>
