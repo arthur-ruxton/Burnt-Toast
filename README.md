@@ -19,7 +19,7 @@ Collaboators: [Kirtan](https://github.com/kirtanp8) & [Shak](https://github.com/
 </details>
 
 <details>
-  <summary>Overview</summary>
+  <summary>Overview :bulb:</summary>
   <ul>
     <li>Movie review website, on some level modeled after Rotten Tomatoes.</li>
     <li>Fully functional MERN stack application.</li>
@@ -36,7 +36,7 @@ Collaboators: [Kirtan](https://github.com/kirtanp8) & [Shak](https://github.com/
 </details>
 
 <details>
-  <summary>Tech</summary>
+  <summary>Tech :gear:</summary>
   <ul>
     <li>
       <details>
@@ -192,7 +192,7 @@ Collaboators: [Kirtan](https://github.com/kirtanp8) & [Shak](https://github.com/
 </details>
 
 <details>
-  <summary>Key learnings</summary>
+  <summary>Key learnings :open_book:</summary>
   <ul>
     <li>Planning is everything.</li>
     <li>Create and populate a mongo database + working with express and node.</li>
@@ -204,7 +204,7 @@ Collaboators: [Kirtan](https://github.com/kirtanp8) & [Shak](https://github.com/
 </details>
 
 <details>
-  <summary>Challenges & Wins</summary>
+  <summary>Challenges & Wins :chart_with_upwards_trend:</summary>
   <ul>
     <li>
       Time management - packing as many features in as possible but making sure they all work effectively, removing the ones I couldn’t polish before                     deadline.
