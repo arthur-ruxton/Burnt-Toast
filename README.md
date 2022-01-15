@@ -1,13 +1,12 @@
 # General Assembly - project 3
-# Burnt Toast - MERN stack - film review site
-The live project: [Burnt Toast](http://burnt-toast-ga.herokuapp.com/)
+# [Burnt Toast](http://burnt-toast-ga.herokuapp.com/) - MERN stack - film review site
 
 Collaboators: [Kirtan](https://github.com/kirtanp8) & [Shak](https://github.com/Shak-H)
 
 ### Timeframe: 10 days
 
 <details>
-  <summary>Goals</summary>
+  <summary>Goals :dart:</summary>
   <p>In the teams of three we’ve assigned you, build a full stack application.</p>
   <p>Use MERN stack - MongoDB, Express, React.js & Node.</p>
   <p>Include CRUD operations.</p>
@@ -161,7 +160,7 @@ Collaboators: [Kirtan](https://github.com/kirtanp8) & [Shak](https://github.com/
 </details>
 
 <details>
-  <summary>Visuals</summary>
+  <summary>Visuals :art:</summary>
   <p>Homepage :</p>
   <img src=https://user-images.githubusercontent.com/89402596/148926456-b9cdac8c-4c9d-413a-8e50-b6dc8bad171d.png />
   <p>View all films :</p>
@@ -201,7 +200,7 @@ Collaboators: [Kirtan](https://github.com/kirtanp8) & [Shak](https://github.com/
 </details>
 
 <details>
-  <summary>Possible future improvements</summary>
+  <summary>Possible future improvements :flight_departure:</summary>
   <ul>
     <li>View other users profiles.</li>
     <li>Like button fully functioning + add like button to movies as well as comments.</li>
@@ -213,7 +212,7 @@ Collaboators: [Kirtan](https://github.com/kirtanp8) & [Shak](https://github.com/
 </details>
 
 <details>
-  <summary>Bugs</summary>
+  <summary>Bugs :bug:</summary>
     <p>Some of the styling doesn’t work well when resizing the page (text jumps out of buttons and elements are laid on top of eachother)</p>
     <p>The Like button allows you to like a comment more than once.</p>
 </details>
