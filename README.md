@@ -140,7 +140,6 @@ Collaboators: [Kirtan](https://github.com/kirtanp8) & [Shak](https://github.com/
       </li>
      </ul>
   </div
-  
 </details>
 
 <details>
