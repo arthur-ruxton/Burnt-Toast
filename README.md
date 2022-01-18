@@ -116,35 +116,74 @@ Collaboators: [Kirtan](https://github.com/kirtanp8) & [Shak](https://github.com/
   <div>
     <h3>Building features :</h3>
     <h4>Backend Setup :<h4>
-    <p>
-      Establishing the Mongo database, then fundamental models, routes and controllers etc was all possible by closely following our notes, Shak - started us off         with the environment & index.js. <br>
-      We pair coded and group coded regularly using VS.code liveshare and I tested routes often, using Insomnia (analogous to postman which you also may be familiar       with). Testing in this way allows us to ensure our requests, our routes and our controllers are fully functional before starting work on the front end.
-      <img src="https://user-images.githubusercontent.com/89402596/149984176-48405186-afcf-41fa-8d5b-1e87350ab706.png" />
-      <img src="https://user-images.githubusercontent.com/89402596/149984387-7c0b7345-8a66-4e47-9cca-d7f27d7d9893.png" />
-    </p>
+      <p>
+        Establishing the Mongo database, then fundamental models, routes and controllers etc was all possible by closely following our notes, Shak - started us off         with the environment & index.js. <br>
+        We pair coded and group coded regularly using VS.code liveshare and I tested routes often, using Insomnia (analogous to postman which you also may be               familiar with). Testing in this way allows us to ensure our requests, our routes & controllers are functional before starting work on the frontend.
+        <img src="https://user-images.githubusercontent.com/89402596/149984176-48405186-afcf-41fa-8d5b-1e87350ab706.png" />
+        <img src="https://user-images.githubusercontent.com/89402596/149984387-7c0b7345-8a66-4e47-9cca-d7f27d7d9893.png" />
+      </p>
+    <h4>Frontend Setup :<h4>  
+      <p>
+        I began work on the frontend once we were able to make the basic requests. 
+        These requests were as follows:
+        <ul>
+          <li>(POST) Register a user, Login, add a movie to the database.</li>
+          <li>(GET) get the users data, get the data for one or all of the movies.</li>
+          <li>(PUT) edit a movie.</li>
+          <li>(DELETE) delete a movie.</li>
+        </ul>
+      </p>
+      <p>
+        Just before I began work on the frontend, an update was made to the react-router-dom architecture, which introduced a bonus challenge - to correctly                 implement the new system I was unfamiliar with. <br>
+        I created a ‘helpers’ folder containing configurable callback functions for making our requests. In this way the request functions can all be located and           edited fairly easily if necessary down the line.
+      </p>
+      <p><b>Examples of helper functions I wrote - backend:</b></p>
+      <img src="https://user-images.githubusercontent.com/89402596/149986130-9d5cc629-7749-48fa-9e4c-753ec31a101b.png" />
+    <h4>Frontend build :</h4>
+      <p>
+        Our plan gave us a clear overview of the components we would have to build for our MVP and I made quick progress there - building things like the nav bar           and the footer which would be seen on every page - then the register and login form. <br>
+        Much of the logic for building these pages and components works in the same sort of way - request data from the database, map over it and display it                 appropriately. <br>
+        The home page (carousel of movies within the database which is updated live) was challenging and I took ownership over that component too, having worked             with the react bootstrap library in the past. <br>
+        Kirtan built a complex search bar system, utilising what he’d learned on his previous project - an outstanding feature of the frontend. 
+      </p>
+      <p><b>
+        Carousel I built by mapping over objects in the database: 
+        Code snippets - personal contributions - backend:
+        <img src=https://user-images.githubusercontent.com/89402596/149164991-81944899-56b6-4c81-af85-50eb36e8b1b1.png />
+      </b><p>
+    <h4>Backend update:</h4>
+      <p>
+        Shak and I worked out which schemas and relationships we would need to allow a logged in user the ability to comment on a movie and like existing comments.         I wrote complex controllers for those operations, testing them on insomnia to make sure they worked. <br>
+        I then hooked up the front end, which was surprisingly challenging. The like / unlike system still needs some small tweaks on the frontend. - I felt there           was room for improvement. 
+      </p>
+      <p><b>
+        Schema relationships - embedded within embedded:
+        <img src="https://user-images.githubusercontent.com/89402596/149988379-9357124a-a7ef-4882-863e-595a420b8384.png" />
+      <b></p>
+      <p><b>
+        Example of controller for complex crud opperations :
+        <img src="https://user-images.githubusercontent.com/89402596/149988786-29fa1c06-7a92-4662-b738-a3afe926cc3b.png" />
+      </b></p>
   </div>
-</details>
-
-<details>
-  <summary>Personal contributions (code) Backend:</summary>
-  <p>Models - Embedded relationship within an embedded relationship</p>
-  <img src=https://user-images.githubusercontent.com/89402596/149164171-fd62b783-5fb6-4312-9e3c-63f16f4af8c8.png />
-  <p>Controllers - Add or delete a film rating</p>
-  <img src=https://user-images.githubusercontent.com/89402596/149163897-88bff672-c882-4bc4-b35f-79822c9b5b32.png />
-  <p>Controllers - Like an existing comment:</p>
-  <img src=https://user-images.githubusercontent.com/89402596/149163671-3cb63059-1683-40b6-8846-0c87cf731905.png />
-</details>
-
-<details>
-  <summary>Personal contributions (code) Frontend:</summary>
-  <p>'helpers' - exported functions for making requests: </p>
-  <img src=https://user-images.githubusercontent.com/89402596/149167174-2d9a1477-d0a3-428f-92e3-603269073dab.png />
-  <br>
-  <img src=https://user-images.githubusercontent.com/89402596/149167680-629b7dd0-74fd-4117-b680-afa2a16efc23.png />
-  <p>
-    Building a Carousel of all movies in the database at any given time. -- To do this make a request for all films in the database saving them to a stateful variable assigned an array of objects (films) -> map over this array of films -> create an instance of a 'Slide' component passing the individual film object as React props
-  </p>
-  <img src=https://user-images.githubusercontent.com/89402596/149164991-81944899-56b6-4c81-af85-50eb36e8b1b1.png />
+  <div>
+    <h3>Styling :</h3>
+    <p>
+      Shaks name idea gave us the theme / colour scheme of the site. He did lots of tweaking on styling. 
+      Kirtan wrote all media queries, scrolling effects and styles for features like the header and footer.
+      I took ownership of :
+      <ul>
+        <li>The logo & typefaces</li>
+        <li>Shaping / positioning most of the components.</li>
+        <li>
+          I found & implemented a second React library called Reveal, which allowed me to make simple animations on all of the forms, giving the site a slightly               more dynamic feel.
+        </li>
+    </ul>
+    </p>
+      <p><b>
+        Example of imported files and nested rules using SCSS:
+        <img src="https://user-images.githubusercontent.com/89402596/149990009-fbf61770-99de-4ae2-8fa5-c0ce7e5bb8f7.png" />
+      </b></p>
+  </div>
 </details>
 
 <details>
@@ -163,14 +202,12 @@ Collaboators: [Kirtan](https://github.com/kirtanp8) & [Shak](https://github.com/
 
 <details>
   <summary>Key learnings :open_book:</summary>
-  <ul>
-    <li>Planning is everything.</li>
-    <li>Create and populate a mongo database + working with express and node.</li>
-    <li>Adapt when using newly updated architectures (react-router-dom)</li>
-    <li>SASS makes for more readable and reusable CSS.</li>
-    <li>React Reveal for simple animation of any component.</li>
-    <li>Heavily customised react-bootstrap components can cause issues, be sure to allow time to achieve and test the intended effect.</li>
-  </ul>
+  Planning is everything. <br>
+  Create and populate a Mongo database + working with express and node. <br>
+  Adapt when using newly updated architectures (react-router-dom). <br>
+  SASS makes for more readable and reusable CSS. <br>
+  React Reveal for simple animation of any component. <br>
+  Heavily customised react-bootstrap components can cause issues, be sure to allow time to achieve and test the intended effect.
 </details>
 
 <details>
