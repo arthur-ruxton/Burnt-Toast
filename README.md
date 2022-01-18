@@ -11,8 +11,8 @@ Collaboators: [Kirtan](https://github.com/kirtanp8) & [Shak](https://github.com/
   <p>Use MERN stack - MongoDB, Express, React.js & Node.</p>
   <p>Include CRUD operations.</p>
   <p>For a challenge - include Authentication.</p>
-  <p>Use SASS for styling</p>
-  <p>For a challenge include one or more dependencies for React libraries</p>
+  <p>Use SASS for styling.</p>
+  <p>For a challenge include one or more dependencies for React libraries.</p>
   <p>It can be a direct clone of, or inspired by, an existing website.</p>
   <p>Make wireframes as well as a written plan in order for us to sign you off.</p>
 </details>
@@ -66,7 +66,7 @@ Collaboators: [Kirtan](https://github.com/kirtanp8) & [Shak](https://github.com/
 <details>
   <summary>Approach :desktop_computer: :arrow_right: :desktop_computer:</summary>
   <div>
-    <h3>Beginning - planning :</h3>
+    <h3>Planning :</h3>
     <p>
       Immediately we set up a Trello board. We started with written plans for the front and backend respectively.
       <ul>
@@ -76,64 +76,52 @@ Collaboators: [Kirtan](https://github.com/kirtanp8) & [Shak](https://github.com/
         <li>
           Frontend plan: we described the project, components and pages. - we also used wireframes as a visual aid and included those in the Trello board.
         </li>
-      </ul>
-    </p>
-    <p>We then added three lists - ‘to do’, ‘in progress’, ‘done’ - in order to track progress.</p>
-    <p>
-      Once we had established the mongo database it was time to begin work on the backend code, starting with the environment & index - closely following the notes       we made during the previous segment of the course.
-    </p>
-    <p>
-      We built the models we felt were necessary to deliver and MVP and established the required relationships. - My Teammate Shak largely took ownership over             this step as he was keen to practice it. 
-    </p>
-    <p>
-      We then began writing controllers and routes simultaneously and testing them using Insomnia (analogous to postman which you also may be familiar with).             Testing in this way allows us to ensure our requests, our routes and our controllers are fully functional before starting work on the front end.
-    </p>
-    <p>
-      We began work on the frontend once we were able to make the fundamental requests and get the appropriate errors returned if we did not provide a valid               authorization token. These specified requests were as follows: 
-      <ul>
-        <li>
-          (POST) Register a user, Login, get the user data, add a movie to the database, (GET) get the data for one or all of the movies, (PUT) edit a movie,                 (DELETE) delete a movie.
+          We then added three lists - ‘to do’, ‘in progress’, ‘done’ - in order to track progress.
         </li>
       </ul>
     </p>
+    <img src="https://user-images.githubusercontent.com/89402596/149979693-9c0ab063-e8ef-4023-a320-8ffa8d3d6294.png">
   </div>
   <div>     
-    <h3>Middle - bulk of the project :</h3>
-    <p>
-      Just before we began work on the frontend, an update was made to the react-router-dom architecture, which introduced a bonus challenge - to correctly               implement the new system we were unfamiliar with.
-    </p>
-    <p>
-      We created a ‘helpers’ folder containing configurable callback functions for making our requests. In this way your request functions can all be located             and edited fairly easily if necessary down the line.
-    </p>
-    <p>
-      Our thorough plan gave us a clear overview of the pages and components we would have to build for our MVP and we made quick progress with those -                   building out things like the navigation bar and the footer which would be seen on every page - then the register and login form which we used to retest             our requests and routes, successfully.
-    </p>
-    <p>
-      The home page (carousel of movies within the database which is updated live) was challenging and I took ownership over that component, having worked               with the react bootstrap library in the past. 
-    </p>
-    <p>
-      My Teammate Kirtan built a brilliant search bar system, utilising what he’d learned on his previous project.
-    </p>
-    <p>
-      Building out things like the ‘movies’ page felt easy and went smoothly overall.
-    </p>
+    <h3>Work split :</h3>
+    <h4>Shak took ownership of :</h4>
+    <ul>
+      <li>Project Idea (a movie review website called burnt toast, based on rotten tomatoes)</li>
+      <li>Backend setup (Implementing index.js, the environment & config, basic models & routes setup).</li>
+      <li>Some route testing using insomnia.</li>
+      <li>Some CSS - specifically positioning of elements in the header section.</li>
+    </ul>
+    <h4>Kirtan took ownership of :</h4>
+   <ul>
+      <li>The fairly complex search-bar feature.</li>
+      <li>ALL Media queries.</li>
+      <li>Some other CSS - helping Shaq with the header section, Profile-Page, ALL scrolling effects. </li>
+      <li>Adding data to the database to help with testing.</li>
+    </ul>
+    <h4>I took ownership of :</h4>
+     <ul>
+       <li>Structural design & wireframes.</li>
+       <li>Model relationships, routes & controllers for the more complex crud operations.</li>
+       <li>Authentication (front and backend).</li>
+       <li>Lots of route testing using insomnia.</li>
+       <li>Seeding the database.</li>
+       <li>Exported helper functions for making requests on the front end.</li>
+       <li>All forms.</li>
+       <li>Mapping over data to build dynamic components like the carousel.</li>
+       <li>Most components and their styling for computer screens - using the SCSS system.</li>
+       <li>Both libraries - being the only person familiar with Bootstrap & React Reveal at the time.</li>
+       <li>Project deployment.</li>
+      </ul>
   </div>
   <div>
-    <h3>End - polishing & testing :</h3>
-      <p>
-        The later stages of the process involved adding to the backend. Shak and I worked out what kind of schemas and relationships we would need to allow a               logged in user the ability to comment on a movie and like existing comments. 
-        <img src=https://user-images.githubusercontent.com/89402596/149163175-9747ba59-20d5-4359-97da-ef079aebd727.png />
-      </p>
-      <p>
-        We had to write complex controllers for those operations, testing them on insomnia. Writing the controllers for liking and unliking a comment on a film             was especially challenging, grappling with the logic until It worked on insomnia was a satisfying process. - I took ownership over this logic.
-        <img src=https://user-images.githubusercontent.com/89402596/149163006-10c58fb4-1456-4cfb-b9d7-8137572249fa.png />
-      </p>
-      <p>
-        I then began work on the front end, which turned out to be even more challenging funnily enough. I was able to make the commenting system work in time             for the presentation but the like / unlike system still needed some small tweaks. - I felt there was room for improvement. 
-      </p>
-      <p>
-        We then styled the project, finding fonts, a logo, and a color scheme that we felt suited the project. I took ownership over much of this stage of the             process. I found and implemented a second React library called react-reveal, which allowed me to include simple animations on all of the sites forms,               giving the site a slightly more dynamic feel. 
-      </p>
+    <h3>Building features :</h3>
+    <h4>Backend Setup :<h4>
+    <p>
+      Establishing the Mongo database, then fundamental models, routes and controllers etc was all possible by closely following our notes, Shak - started us off         with the environment & index.js. <br>
+      We pair coded and group coded regularly using VS.code liveshare and I tested routes often, using Insomnia (analogous to postman which you also may be familiar       with). Testing in this way allows us to ensure our requests, our routes and our controllers are fully functional before starting work on the front end.
+      <img src="https://user-images.githubusercontent.com/89402596/149984176-48405186-afcf-41fa-8d5b-1e87350ab706.png" />
+      <img src="https://user-images.githubusercontent.com/89402596/149984387-7c0b7345-8a66-4e47-9cca-d7f27d7d9893.png" />
+    </p>
   </div>
 </details>
 
